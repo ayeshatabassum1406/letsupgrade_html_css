@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.bg{
+    padding:30px;
+    background-color: #c290eb;
+}
+@font-face {
+    font-family:rock;
+    src: url("./VTKS ROCK GARAGE BAND.ttf");
+}
+.logo{
+    /*background-color:red ;*/
+    width: 100%;
+    height:100px;
+    font-size: 30px;
+    color:rgb(120, 7, 165);
+    font-family:rock;
+    text-align:center;
+    
+}
+.search{
+    width:70%;
+    height:50px;
+    /* background-color: red; */
+    margin-left:15%;/*fake size of 15 */
+    font-size:0px;/*to remove gap*/
+    
+}
+
+.search_field{
+    height:50px;
+    width:90%;
+    font-size: 20px;
+    font-family: segoe UI;
+    font-weight:200;
+    text-indent:30px;
+  
+      vertical-align: top;
+      outline:none;
+      border:none;
+
+}
+.search_btn{
+    width:10%;/*serach field is 90 so 10%*/
+    border:none;
+    height: 50px;
+    background-color: white;/*search and bottome same*/
+
+}
+.search_icon{
+    /* border:none; */
+    width:30px;
+}
+.songs{
+    width:90%;
+    /*height:auto ;*/
+    margin-top:30px;
+    /* background-color: red; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left:5%;
+
+}
+.song{
+    width:22%;
+    /*height:500px ;heigth of song depends on num of childrens*/
+    padding-top:20px;
+    padding-bottom:20px;
+    display:inline-block;
+    margin-left:2%;
+    margin-bottom: 20px;
+    background-color: rgb(194, 135, 209);
+    overflow:hidden;
+   
+
+
+}
+.song:hover .song_img{
+    overflow: visible;
+}
+.song_img{
+    width:80%;
+    height:350px ; 
+  
+    /* background-color: brown; */
+    margin-left:10%;
+    overflow:hidden;
+    
+}
+.song_player{
+    width:80%;
+   
+    /* background-color: yellow; */
+    margin-left:10%;
+    margin-top: 30px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: 200;
+    font-size:15px;
+}
+.song_thumbnail{
+    width:100%;
+    height: 350px;
+    transition: .4s;
+
+}
+.song:hover .song_thumbnail{
+    transform: scale(1.7);
+}
+.audio{
+    width:100%;
+    margin-top:10px;
+}
+p{
+    margin-left:10%;
+}
+@media (max-width:500px) {
+
+    .search{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .songs{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .song{
+        width: 100%;
+        margin-left:0px ;
+    }
+    
+}
+
